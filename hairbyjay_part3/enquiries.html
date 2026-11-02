@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Send HairByJay an enquiry about stock, pricing, or placing an order — we'll get back to you quickly.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css_assets/styles.css">
+    <title>HairByJay | Enquiries</title>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <img src="_images/HairByJay_logo.jpeg" alt="HairByJay logo">
+            <h1>HairByJay</h1>
+            <button type="button" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <button type="button" id="cart-toggle" class="cart-btn" aria-label="Open cart">
+                Cart <span id="cart-count" class="cart-count" style="display:none;">0</span>
+            </button>
+            <nav id="site-nav">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="enquiries.html" aria-current="page">Enquiries</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-hero">
+        <h1>Enquiries</h1>
+        <p>Have a question about a colour, length, or custom order? Fill in the form below and we'll get back to you.</p>
+    </div>
+
+    <main>
+        <div class="enquiries-wrap">
+            <!-- Enquiry form: HTML form element, validated and submitted via js_assets/form-validation.js
+                 (Part 3, item 4 Form Functionality and Validation) -->
+            <div class="contact-form-card">
+                <form id="enquiry-form" class="site-form validated-form" novalidate>
+                    <div class="form-field">
+                        <label for="enquiry-name">Full Name</label>
+                        <input type="text" id="enquiry-name" name="name" required>
+                        <span class="field-error" id="enquiry-name-error"></span>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="enquiry-email">Email Address</label>
+                        <input type="email" id="enquiry-email" name="email" required>
+                        <span class="field-error" id="enquiry-email-error"></span>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="enquiry-phone">Phone Number</label>
+                        <input type="tel" id="enquiry-phone" name="phone">
+                        <span class="field-error" id="enquiry-phone-error"></span>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="enquiry-type">What is this enquiry about?</label>
+                        <select id="enquiry-type" name="enquiry_type" required>
+                            <option value="Stock Availability">Stock Availability</option>
+                            <option value="Pricing">Pricing</option>
+                            <option value="Custom Order">Custom Order</option>
+                            <option value="Styling Advice">Styling Advice</option>
+                        </select>
+                        <span class="field-error" id="enquiry-type-error"></span>
+                    </div>
+
+                    <!-- Options for this dropdown are filled in automatically from
+                         js_assets/products-data.js, so it always matches the Products page. -->
+                    <div class="form-field">
+                        <label for="enquiry-product">Which wig are you interested in? (optional)</label>
+                        <select id="enquiry-product" name="product">
+                            <option value="">-- Not sure yet --</option>
+                        </select>
+                        <span class="field-error" id="enquiry-price-preview"></span>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="enquiry-message">Your Message</label>
+                        <textarea id="enquiry-message" name="message" required placeholder="Tell us what you're looking for..."></textarea>
+                        <span class="field-error" id="enquiry-message-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn">Send Enquiry</button>
+                    <p class="form-status" role="status"></p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p class="foot-brand">Hair by Jay</p>
+        <p>&copy; 2026 HairByJay. All rights reserved.</p>
+    </footer>
+
+    <!-- Cart drawer: shared across every page -->
+    <div id="cart-overlay"></div>
+    <aside id="cart-drawer" aria-label="Shopping cart">
+        <div class="cart-drawer-head">
+            <h2>Your Cart</h2>
+            <button type="button" id="cart-close" aria-label="Close cart">&times;</button>
+        </div>
+        <div id="cart-items"></div>
+        <div class="cart-drawer-foot">
+            <div class="cart-total-row">
+                <span>Total</span>
+                <span id="cart-total">R0</span>
+            </div>
+            <a class="btn" href="enquiries.html" style="display:block;text-align:center;">Enquire About Order</a>
+        </div>
+    </aside>
+
+    <script src="js_assets/products-data.js"></script>
+    <script src="js_assets/cart.js"></script>
+    <script src="js_assets/nav.js"></script>
+    <script src="js_assets/form-validation.js"></script>
+</body>
+</html>

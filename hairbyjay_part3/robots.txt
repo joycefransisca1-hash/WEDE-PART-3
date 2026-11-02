@@ -1,0 +1,8 @@
+# robots.txt for HairByJay
+# Tells search engine crawlers which pages they may index.
+# Part 3, item 3.3 Additional Requests.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.hairbyjay.co.za/sitemap.xml

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- sitemap.xml for HairByJay
+     Helps search engines understand the site's page structure.
+     Part 3, item 3.3 Additional Requests.
+     Replace the domain below with your real deployed URL. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.hairbyjay.co.za/index.html</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.hairbyjay.co.za/about.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hairbyjay.co.za/products.html</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.hairbyjay.co.za/contact.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hairbyjay.co.za/enquiries.html</loc>
+    <priority>0.7</priority>
+  </url>
+</urlset>

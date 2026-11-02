@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HairByJay — luxury lace wigs and hair pieces. Wear luxury, not effort. Shop affordable, natural-looking wigs online.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css_assets/styles.css">
+    <title>HairByJay | Home</title>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <img src="_images/HairByJay_logo.jpeg" alt="HairByJay logo">
+            <h1>HairByJay</h1>
+            <button type="button" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <button type="button" id="cart-toggle" class="cart-btn" aria-label="Open cart">
+                Cart <span id="cart-count" class="cart-count" style="display:none;">0</span>
+            </button>
+            <nav id="site-nav">
+                <ol>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="enquiries.html">Enquiries</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-copy">
+                <p class="eyebrow-mark">Hair by Jay</p>
+                <h2>Wear luxury, not effort.</h2>
+                <p>Hand-picked lace wigs and hair pieces for women who want salon-quality hair without the salon hours. Every unit is chosen for density, movement, and a hairline that disappears.</p>
+                <a class="btn" href="products.html">Shop the collection</a>
+                <a class="btn btn-ghost" href="enquiries.html">Make an enquiry</a>
+            </div>
+            <div class="hero-frame">
+                <img src="_images/product4.jpeg" alt="Deep brown balayage lace wig styled in loose waves">
+            </div>
+        </div>
+    </section>
+
+    <div class="promise-strip">
+        <div class="wrap">
+            <span>100% human hair</span>
+            <span>Pre-plucked lace</span>
+            <span>Nationwide delivery</span>
+            <span>Custom colouring on request</span>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="wrap">
+            <div class="section-head">
+                <h2>Client favourites</h2>
+                <p>A few of the textures and colours our clients keep coming back for.</p>
+            </div>
+            <div class="preview-grid">
+                <a class="preview-card" href="products.html">
+                    <div class="thumb"><img src="_images/product1.jpeg" alt="Aisha wig"></div>
+                    <h3>Aisha</h3>
+                    <p class="price">R550</p>
+                </a>
+                <a class="preview-card" href="products.html">
+                    <div class="thumb"><img src="_images/product3.jpeg" alt="Vintage Wave wig"></div>
+                    <h3>Vintage Wave</h3>
+                    <p class="price">R650</p>
+                </a>
+                <a class="preview-card" href="products.html">
+                    <div class="thumb"><img src="_images/product6.jpeg" alt="Liesel curls wig"></div>
+                    <h3>Liesel Curls</h3>
+                    <p class="price">R600</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+        <div class="wrap">
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>Sourced with care</h3>
+                    <p>Every bundle is checked for consistent density and a natural shine before it reaches you.</p>
+                </div>
+                <div class="feature">
+                    <h3>Fitted for real life</h3>
+                    <p>Breathable lace and adjustable straps, built for long wear from wash day to wash day.</p>
+                </div>
+                <div class="feature">
+                    <h3>Guided by Jay</h3>
+                    <p>Not sure what suits you? Send an enquiry and get personal styling advice before you buy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta-band">
+        <h2>Ready to find your next look?</h2>
+        <a class="btn" href="products.html">Browse all wigs</a>
+    </div>
+
+    <footer>
+        <p class="foot-brand">Hair by Jay</p>
+        <p>&copy; 2026 HairByJay. All rights reserved.</p>
+    </footer>
+
+    <!-- Cart drawer: shared across every page -->
+    <div id="cart-overlay"></div>
+    <aside id="cart-drawer" aria-label="Shopping cart">
+        <div class="cart-drawer-head">
+            <h2>Your Cart</h2>
+            <button type="button" id="cart-close" aria-label="Close cart">&times;</button>
+        </div>
+        <div id="cart-items"></div>
+        <div class="cart-drawer-foot">
+            <div class="cart-total-row">
+                <span>Total</span>
+                <span id="cart-total">R0</span>
+            </div>
+            <a class="btn" href="enquiries.html" style="display:block;text-align:center;">Enquire About Order</a>
+        </div>
+    </aside>
+
+    <script src="js_assets/products-data.js"></script>
+    <script src="js_assets/cart.js"></script>
+    <script src="js_assets/nav.js"></script>
+</body>
+</html>
