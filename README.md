@@ -52,7 +52,7 @@ Colors and typography are drawn directly from the HairByJay brand mark:
 - Jost for clean, readable body text
 
 ## Changelog
-See [changelog.md](./changelog.md) for a full history of changes.
+See [Changelog.md](./Changelog.md) for a full history of changes.
 
 ## References
 * Anthropic (2026) Claude. Available at: https://claude.ai/⁠￼ (Accessed: 15 September 2026).
